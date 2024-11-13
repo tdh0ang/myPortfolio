@@ -73,6 +73,7 @@ section {
     gap: 8rem;
     background-color: black;
     flex-direction: row-reverse;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .home .home-content h1 {
@@ -96,8 +97,8 @@ span {
 }
 
 .home-img img {
-    width: 32vw;
-    max-height: 90vh; 
+    width: 22vw;
+    max-height: 60vh; 
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 25px #6626fc;
@@ -186,4 +187,16 @@ span {
     background-color: #6626fc;
     padding: 0.5rem;
     border-radius: 5px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

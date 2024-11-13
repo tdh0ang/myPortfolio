@@ -36,7 +36,7 @@ header {
 
 .logo {
     font-size: 3rem;
-    color: #624bb7;
+    color: #6626fc;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s ease;
@@ -56,8 +56,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #624bb7;
-    border-bottom: 3px solid #624bb7;
+    color: #6626fc;
+    border-bottom: 3px solid #6626fc;
 }
 
 /* Home Section */
@@ -82,7 +82,7 @@ section {
 }
 
 span {
-    color: #624bb7;
+    color: #6626fc;
 }
 
 .home-content h3 {
@@ -100,7 +100,7 @@ span {
     max-height: 90vh; 
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 0 25px #624bb7;
+    box-shadow: 0 0 25px #6626fc;
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -112,7 +112,7 @@ span {
 /* Social Icons */
 .social-icons a {
     display: inline-block;
-    color: #624bb7;
+    color: #6626fc;
     margin: 3rem 1.5rem 3rem 0;
     font-size: 1.6rem;
     transition: 0.3s ease;
@@ -121,7 +121,7 @@ span {
 .social-icons a:hover {
     color: white;
     transform: scale(1.2);
-    background-color: #624bb7;
+    background-color: #6626fc;
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -133,17 +133,17 @@ span {
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #624bb7;
+    color: #6626fc;
     font-weight: 600;
-    border: 2px solid #624bb7;
+    border: 2px solid #6626fc;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #624bb7;
+    background-color: #6626fc;
     color: black;
-    box-shadow: 0 0 25px #624bb7;
+    box-shadow: 0 0 25px #6626fc;
 }
 
 /* Typing Effect */
@@ -158,7 +158,7 @@ span {
 
 .typing-text span {
     display: inline-block;
-    border-right: 4px solid #624bb7;
+    border-right: 4px solid #6626fc;
     animation: blink 0.75s step-end infinite;
 }
 
@@ -170,7 +170,7 @@ span {
 
 .social-icons a {
     display: inline-block;
-    color: #624bb7;
+    color: #6626fc;
     margin: 3rem 1.5rem 3rem 0;
     font-size: 1.6rem;
     transition: 0.3s ease;
@@ -183,7 +183,7 @@ span {
 .social-icons a:hover {
     color: white;
     transform: scale(1.2);
-    background-color: #624bb7;
+    background-color: #6626fc;
     padding: 0.5rem;
     border-radius: 5px;
 }

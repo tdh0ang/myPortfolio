@@ -34,7 +34,7 @@ header {
 
 .logo {
     font-size: 3rem;
-    color: #624bb7;
+    color: #6626fc;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s ease;
@@ -54,8 +54,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #624bb7;
-    border-bottom: 3px solid #624bb7;
+    color: #6626fc;
+    border-bottom: 3px solid #6626fc;
 }
 
 /* Education Section Styling */
@@ -69,7 +69,7 @@ nav a.active {
     font-size: 4.8rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: #624bb7; /* Accent color for title */
+    color: #6626fc; /* Accent color for title */
 }
 
 .degree h2 {
@@ -99,7 +99,7 @@ nav a.active {
 }
 
 .education ul li a {
-    color: #624bb7; /* Link color */
+    color: #6626fc; /* Link color */
     transition: color 0.3s;
 }
 
@@ -109,7 +109,7 @@ nav a.active {
 
 .education h2 {
     font-size: 3rem;
-    color: #624bb7;
+    color: #6626fc;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
     font-weight: 700;

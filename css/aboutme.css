@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #624bb7;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #624bb7;
+    border-bottom: 3px solid #624bb7;
+}
+
+.about {
+    background-color: #121212; /* Dark background for a sleek look */
+    color: white;
+    padding: 5rem 9%;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.about h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #624bb7; /* Accent color to match your branding */
+}
+
+.about p {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #624bb7; /* Accent color */
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 3rem;
+}
+
+.about ul li {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.about ul li::before {
+    content: "•";
+    color: #624bb7;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.about .quote {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #aaa;
+    margin-top: 3rem;
+    border-left: 4px solid #624bb7;
+    padding-left: 1.5rem;
+}
+
+/* Add any additional content styling for text blocks or images if needed */

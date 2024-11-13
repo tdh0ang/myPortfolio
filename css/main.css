@@ -1,0 +1,189 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #624bb7;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #624bb7;
+    border-bottom: 3px solid #624bb7;
+}
+
+/* Home Section */
+section {
+    min-height: 100vh;
+    padding: 5rem 9%;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+    flex-direction: row-reverse;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #624bb7;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.home-img img {
+    width: 32vw;
+    max-height: 90vh; 
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #624bb7;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-block;
+    color: #624bb7;
+    margin: 3rem 1.5rem 3rem 0;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+    background-color: #624bb7;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #624bb7;
+    font-weight: 600;
+    border: 2px solid #624bb7;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #624bb7;
+    color: black;
+    box-shadow: 0 0 25px #624bb7;
+}
+
+/* Typing Effect */
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.typing-text span {
+    display: inline-block;
+    border-right: 4px solid #624bb7;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #624bb7;
+    margin: 3rem 1.5rem 3rem 0;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a i {
+    margin-right: 0.5rem; /* Adds space between icon and text */
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+    background-color: #624bb7;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+

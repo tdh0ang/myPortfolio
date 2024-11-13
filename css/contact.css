@@ -1,0 +1,151 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #121212; /* Dark background for the body */
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 3rem;
+    color: #624bb7;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #624bb7;
+    border-bottom: 3px solid #624bb7;
+}
+
+/* Contact Section Styling */
+.contact {
+    padding: 10rem 9% 5rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.contact h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #624bb7; /* Accent color for title */
+}
+
+.contact p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #d1d1d1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+form label {
+    font-size: 1.6rem;
+    color: #d1d1d1;
+}
+
+form input,
+form textarea {
+    font-size: 1.6rem;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #624bb7;
+    outline: none;
+}
+
+form button {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.5rem;
+    background-color: #624bb7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4f3c8b;
+}
+
+/* Connect with Me Section */
+.contact h2 {
+    font-size: 3.2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #624bb7;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact ul li {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact ul li a {
+    color: #624bb7;
+    transition: 0.3s ease;
+}
+
+.contact ul li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}

@@ -1,0 +1,116 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #121212; /* Dark background for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for header */
+}
+
+.logo {
+    font-size: 3rem;
+    color: #624bb7;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #624bb7;
+    border-bottom: 3px solid #624bb7;
+}
+
+/* Projects Section Styling */
+.projects {
+    padding: 10rem 9% 5rem; /* Top padding to avoid overlap with fixed header */
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.projects h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #624bb7; /* Accent color for title */
+}
+
+.project {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.project h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.project p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #d1d1d1;
+}
+
+.project a {
+    font-size: 1.6rem;
+    color: #624bb7;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.project a:hover {
+    color: #ffffff;
+}
+
+/* Add hover effect for project links */
+.project a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}

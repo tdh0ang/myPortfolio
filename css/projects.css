@@ -79,6 +79,7 @@ nav a.active {
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .project:hover {
@@ -92,7 +93,7 @@ nav a.active {
     margin-bottom: 1rem;
 }
 
-.project p {
+.project p.short-description {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     color: #d1d1d1;
@@ -107,6 +108,14 @@ nav a.active {
 
 .project a:hover {
     color: #ffffff;
+}
+
+/* Hidden by default - full description of the project */
+.project .full-description {
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #ddd;
 }
 
 /* Add hover effect for project links */

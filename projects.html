@@ -21,26 +21,35 @@
 
     <section class="projects">
         <h1>Welcome To My Projects Page!</h1>
-        <div class="project">
+
+        <div class="project" id="project1">
             <h2>Raspberry Pi 5 Home Server</h2>
-            <p>
+            <p class="short-description">
                 Ignoring the currently (still) high prices, the Raspberry Pi 5 is a super powerful PC, even though
                 it has the size of a credit card. Whether you use it as a desktop PC, a gaming console, or like me, a
-                home server, you'll find so many amaying use cases. Here I will showcase some things I have done and show 
+                home server, you'll find so many amazing use cases. Here I will showcase some things I have done and show 
                 you one or the other setup. 
             </p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            <div class="full-description">
+                <p>This project covers the setup of a Raspberry Pi 5 as a home server, including installation of services like web servers, file sharing, and more. I've also added a storage solution for my files and implemented a backup strategy. All of this can be controlled remotely via SSH or a web interface.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </div>
         </div>
 
-        <div class="project">
+        <div class="project" id="project2">
             <h2>Kubernetes with Raspberry Pi?!</h2>
-            <p>
+            <p class="short-description">
                 This project builds on the RPI5 home server project by adding some spicy hardware. A Raspberry Pi 4, 
                 and four, yes four Raspberry Pi Zero 2W. Everything fitted neatly into a cluster case. 
             </p>
+            <div class="full-description">
+                <p>This project demonstrates how to set up a Raspberry Pi cluster using Kubernetes. The goal is to turn the cluster into a high-performance computing system that can run containerized applications. It explores the challenges of managing multiple Raspberry Pi units and how Kubernetes can help.</p>
+            </div>
         </div>
 
         <!-- Add more projects as you go -->
     </section>
+
+    <script src="js/projects.js"></script>
 </body>
 </html>

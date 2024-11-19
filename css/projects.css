@@ -123,3 +123,17 @@ nav a.active {
     color: #ffffff;
     text-decoration: none;
 }
+
+ul.shifted-list {
+    list-style-type: disc;
+    margin-left: 3rem;
+    margin-right: 3rem; 
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+ul.shifted-list li {
+    font-size: 1.6rem;
+    color: #d1d1d1;
+    margin-bottom: 0.5rem;
+}

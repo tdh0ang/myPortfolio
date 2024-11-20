@@ -33,44 +33,46 @@
             <div class="full-description">
                 <p>This project covers the setup of a Raspberry Pi 5 as a small home server, including installation of services 
                     like web servers, monitoring tools and Docker. 
-                    <br>
-                    Down below are some things you'll need:
+                    <br><br>
+                    <b>What you'll need:</b>
                     <ul class="shifted-list">
                         <li>Raspberry Pi 5</li>
                         <li>MicroSD card (at least 32GB or Nvme SSD)</li>
                         <li>Power supply</li>
                         <li>Internet connection (Ethernet or WiFi)</li>
-                        <li>Keyboard and mouse (optional)</li>
-                        <li>HDMI cable for monitor connection (optional)</li>
-                        <li>Raspberry Pi 5 Case (optional)</li>
+                        <li>(Optional) Keyboard and mouse</li>
+                        <li>(Optional) HDMI cable for monitor connection</li>
+                        <li>(Optional) Raspberry Pi 5 Case</li>
                     </ul>
                     <br>
-                    My setup in case you want to know consists of my Pi, an <a href="https://www.rasppishop.de/Argon-ONE-V3-M2-NVME-PCIE-Gehaeuse"> Argon ONE V3 NVME Case</a>
-                    a 256GB Nvme SSD that I have from my laptop because I upgraded my laptop SSD, so I had a spare lying around. This thing with my 
-                    power supply is pretty much the hardware setup. The rest is configuration on the Pi itself. Don't worry, pretty much all of the 
-                    services I installed have a GUI to them, making it super easy to configure things, without living in the terminal emulator. Another
-                    thing I wanted to mention is, that the case has a built-in fan and Nvme SSD adapter, the adapter being a more expensive option. So you 
-                    also have thermal control, in case your Pi runs too hot. 
-                    <br><br>
-                    <b>What now?</b>
+                    My configuration includes the <a href="https://www.rasppishop.de/Argon-ONE-V3-M2-NVME-PCIE-Gehaeuse"> Argon ONE V3 NVME Case</a> and a 256GB NVMe 
+                    SSD, which was repurposed from my laptop after an upgrade. This case offers a built-in an for thermal management and an NVMe SSD adapter. While the 
+                    adapter adds to the cost, an SSD is in all ways superior to a MicroSD, especially when you consider setting up something like a remote file system.
                     <br>
-                    So for this I'm going to assume that you have everything installed. Booting from SSD might be something you need to look up. The installation process 
-                    is pretty simple and you can do it with a bootable USB or MicroSD. After that you're basically just doing some Linux commands. 
+                    This thing with my power supply is pretty much the hardware setup. The rest is configuration on the Pi itself. Don't worry, pretty much all of the 
+                    services I installed have a GUI to them, making it super easy to configure things, without living in the terminal emulator.
                     <br><br>
-                    <b> What did I do?</b>
+                    <b>Initial Setup</b>
                     <br>
-                    For the OS chose Linux Server, no specific reason, just choose something you like. For Linux Server, the thing is, that you don't have 
-                    a desktop environment. Everything is done via the console. And yes I did say before that there will be GUI's, But in a different form. 
-                    SSH is super important, as with SSH you can remotely connect to your Pi.
+                    1. Install your operating system. I recommend booting from an SSD for better performance. You can set this up using a bootable USB or MicroSD card
+                    <br>
+                    2. My OS of choice is Linux Server, which operates entirely via the console (no desktop environment), but is not needed, just more lightweight
+                    <br>
+                    3. Configure SSH (Secure Shell) to enable remote access to your Raspberry Pi (you can look that up)
                     <br><br>
-                    Your WiFi router IP should be known, or more specifically your addressing scheme in your private network (usually 192.168.1.0/24 or something similar).
-                    Fing can be useful, which is a mobile App for scanning the network you are in for participants. Knowing that is pretty useful, because if your address space is
-                    192.168.1.0, then your router is typically at 192.168.1.1, at the first address in the network. You can type that in any browser of a device which is connected
-                    to your WiFi, and it'll open a GUI for your WiFi Router. In here you can have some super useful settings, or simply see which devices are present, so you can stop using
-                    Fing. My WiFi actually has an option to set up WireGuard for example, so I don't need to use my Pi to do VPN stuff. I just use the VPN config from my router, 
-                    and I got access to my home network everywhere, granted that I have WiFi.   
+                    <b>Networking Basics</b>
+                    <br>
+                    Some things you need to know:
+                    <ul class="shifted-list">
+                        <li>Your router’s IP address (commonly 192.168.1.1) serves as a gateway to your network settings</li>
+                        <li>Tools like Fing (a mobile app) can scan your network and list connected devices. Alternatively, access your router’s GUI through a browser for similar information</li>
+                        <li>Some routers, like mine, even offer features such as WireGuard VPN, eliminating the need to set up VPN services on the Raspberry Pi</li>
+                    </ul>
+                    <br>
+                    What you basically need to know is the addressing scheme of your private network. Because all the other devices will have the same address space, 
+                    just a different number at the end to uniquely identify you devices. 
                     <br><br>
-                    <b>What I set up</b>
+                    <b>What I installed</b>
                     <br>
                     <ul class="shifted-list">
                         <li>Monitoring, mainly RPI Monitor, Grafana + Prometheus</li>
@@ -80,7 +82,8 @@
                         <li>News Aggregator (TTRSS)</li>
                         <li>Homarr</li>
                     </ul>
-
+                    <br>
+                    Most of the applications in this list are deployed as Docker containers, which is a super easy way to install applications but also manage them. 
                 </p>
                 <!-- <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a> -->
             </div>

@@ -102,15 +102,35 @@
         </div>
 
         <div class="project" id="project2">
-            <h2>Kubernetes with Raspberry Pi?!</h2>
+            <h2>Kubernetes (K8's) with Raspberry Pi?!</h2>
             <p class="short-description">
-                This project builds on the RPI5 home server project by adding some spicy hardware. A Raspberry Pi 4, 
-                and four, yes four Raspberry Pi Zero 2W. Everything fitted neatly into a cluster case. 
+                This project builds on the RPI5 home server project by adding some spicy hardware. A Raspberry Pi 4,  four, yes four Raspberry Pi Zero 2W. Everything fitted neatly into a cluster case. 
             </p>
             <div class="full-description">
-                <p>This project demonstrates how to set up a Raspberry Pi cluster using Kubernetes. The goal is to turn the 
-                    cluster into a high-performance computing system that can run containerized applications. It explores the 
-                    challenges of managing multiple Raspberry Pi units and how Kubernetes can help.
+                <p>
+                    First of all, what is Kubernetes and what are cluster and most importantly, why all of that?
+                    <br>
+                    In simple words, starting with clusters, clustering means that you basically have multiple PC's which work as one, while you have one master PC controlling those workers nodes.
+                    You are not going to combine multiple processors to achieve a giga processor, but rather you are able to split work evenly across your computation devices. Basically Docker, but with 
+                    PC's. 
+                    <br>
+                    What do you need for that you may ask? That's what Kubernetes is for, also called K8's. Kubernetes is a container orchestration tool, with which you can manage what I just described. Specifically
+                    for the RPI setup I am using K3's, which is K8's, but more lightweight, so our Pis can handle it. The installation of K3's itself is super simple. This time the most challenging thing
+                    was to set up my 5 Pis, the RPI4, and the four Zero 2 W's. 
+                    <br><br>
+                    <b>Hardware Setup</b>
+                    <br>
+                    My hardware consists of:
+                    <ul class="shifted-list">
+                        <li>1x RPI4 + Power Supply</li>
+                        <li>4x RPI Zero 2 W</li>
+                        <li>1x Clusterhat V2.5</li>
+                        <li>1x Clusterhat Case</li>
+                    </ul>
+                    <br>
+                    I probably spent more than I should have, but for someone like me, projects like these are just worth it. The most expensive part are going to be the Pis. The RPI4 is probably well known,
+                    the predecessor of the RPI5, which I'm using for my home server. The Zero 2 W is essentially the same, except with much less processing power. It runs an ARM 64-Bit processor @1GHz and has
+                    512MB, yes only 512MB. But it is an impressive piece of tech nonetheless, especially later in the entire cluster setup. 
                 </p>
             </div>
         </div>

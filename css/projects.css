@@ -146,3 +146,8 @@ pre {
     font-family: 'Courier New', monospace;  
     overflow: auto;             
 }
+
+code {
+    font-family: 'Courier New', monospace;  /* Ensure code is monospaced */
+    color: #f8f8f2;                        /* Light text color */
+}

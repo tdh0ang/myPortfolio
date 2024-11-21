@@ -19,153 +19,186 @@
         </nav>
     </header>
 
+    <div class="filter">
+        <button data-category="all">All</button>
+        <button data-category="tech">Technology & Coding</button>
+        <button data-category="motorsports">Motorsports</button>
+        <button data-category="music">Music</button>
+    </div>    
+
     <section class="projects">
         <h1>Welcome To My Projects Page!</h1>
 
-        <div class="project" id="project1">
-            <h2>Raspberry Pi 5 Home Server</h2>
-            <p class="short-description">
-                Ignoring the currently (still) high prices, the Raspberry Pi 5 is a super powerful PC, even though
-                it has the size of a credit card. Whether you use it as a desktop PC, a gaming console, or like me, a
-                home server, you'll find so many amazing use cases. Here I will showcase some things I have done and show 
-                you one or the other setup. 
-            </p>
-            <div class="full-description">
-                <p>This project covers the setup of a Raspberry Pi 5 as a small home server, including installation of services 
-                    like web servers, monitoring tools and Docker. 
-                    <br><br>
-                    <b>What you'll need:</b>
-                    <ul class="shifted-list">
-                        <li>Raspberry Pi 5</li>
-                        <li>MicroSD card (at least 32GB or Nvme SSD)</li>
-                        <li>Power supply</li>
-                        <li>Internet connection (Ethernet or WiFi)</li>
-                        <li>(Optional) Keyboard and mouse</li>
-                        <li>(Optional) HDMI cable for monitor connection</li>
-                        <li>(Optional) Raspberry Pi 5 Case</li>
-                    </ul>
-                    <br>
-                    My configuration includes the <a href="https://www.rasppishop.de/Argon-ONE-V3-M2-NVME-PCIE-Gehaeuse"> Argon ONE V3 NVME Case</a> and a 256GB NVMe 
-                    SSD, which was repurposed from my laptop after an upgrade. This case offers a built-in an for thermal management and an NVMe SSD adapter. While the 
-                    adapter adds to the cost, an SSD is in all ways superior to a MicroSD, especially when you consider setting up something like a remote file system.
-                    <br>
-                    This thing with my power supply is pretty much the hardware setup. The rest is configuration on the Pi itself. Don't worry, pretty much all of the 
-                    services I installed have a GUI to them, making it super easy to configure things, without living in the terminal emulator.
-                    <br><br>
-                    <b>Initial Setup</b>
-                    <br>
-                    1. Install your operating system. I recommend booting from an SSD for better performance. You can set this up using a bootable USB or MicroSD card
-                    <br>
-                    2. My OS of choice is Linux Server, which operates entirely via the console (no desktop environment), but is not needed, just more lightweight
-                    <br>
-                    3. Configure SSH (Secure Shell) to enable remote access to your Raspberry Pi (you can look that up)
-                    <br><br>
-                    <b>Networking Basics</b>
-                    <br>
-                    Some things you need to know:
-                    <ul class="shifted-list">
-                        <li>Your router’s IP address (commonly 192.168.1.1) serves as a gateway to your network settings</li>
-                        <li>Tools like Fing (a mobile app) can scan your network and list connected devices. Alternatively, access your router’s GUI through a browser for similar information</li>
-                        <li>Some routers, like mine, even offer features such as WireGuard VPN, eliminating the need to set up VPN services on the Raspberry Pi</li>
-                    </ul>
-                    <br>
-                    What you basically need to know is the addressing scheme of your private network. Because all the other devices will have the same address space, 
-                    just a different number at the end to uniquely identify your devices. 
-                    <br><br>
-                    <b>What I installed</b>
-                    <br>
-                    <ul class="shifted-list">
-                        <li>Monitoring: RPI Monitor, Grafana + Prometheus</li>
-                        <li>Docker Management: Portainer</li>
-                        <li>File Sharing/Cloud: NextCloud</li>
-                        <li>Distributed Computing: folding@home</li>
-                        <li>News Aggregator: TTRSS (Tiny Tiny RSS)</li>
-                        <li>Dashboard: Homarr</li>
-                    </ul>
-                    <br>
-                    Most of the applications in this list are deployed as Docker containers, which is a super easy way to install applications but also to manage them. Management works
-                    either with Portainer, a GUI for your Docker containers, or simply by using the terminal. I end up using both, depending on what is just more comfortable for me at the moment.
-                    <br><br>
-                    <b>Installation Process</b>
-                    <br>
-                    In order to start installing things, it is always good practice to update your pi with:
-                    
-                    <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
-                    
-                    You can also just use the two commands one after another. The -y flag automatically says yes for you, since apt upgrade should always ask you whether you want to install the 
-                    upgrades or not. This should take some time but afterwards you're ready to go. 
-                    <br>
-                    When I started out, I firstly installed RPI Monitor. 
+        <!-- Tech & Coding -->
+        <div class="category">
+            <h2>Tech & Coding</h2>
+            <div class="project" id="project1">
+                <h2>Raspberry Pi 5 Home Server</h2>
+                <p class="short-description">
+                    Ignoring the currently (still) high prices, the Raspberry Pi 5 is a super powerful PC, even though
+                    it has the size of a credit card. Whether you use it as a desktop PC, a gaming console, or like me, a
+                    home server, you'll find so many amazing use cases. Here I will showcase some things I have done and show 
+                    you one or the other setup. 
                 </p>
-                <!-- <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a> -->
+                <div class="full-description">
+                    <p>This project covers the setup of a Raspberry Pi 5 as a small home server, including installation of services 
+                        like web servers, monitoring tools and Docker. 
+                        <br><br>
+                        <b>What you'll need:</b>
+                        <ul class="shifted-list">
+                            <li>Raspberry Pi 5</li>
+                            <li>MicroSD card (at least 32GB or Nvme SSD)</li>
+                            <li>Power supply</li>
+                            <li>Internet connection (Ethernet or WiFi)</li>
+                            <li>(Optional) Keyboard and mouse</li>
+                            <li>(Optional) HDMI cable for monitor connection</li>
+                            <li>(Optional) Raspberry Pi 5 Case</li>
+                        </ul>
+                        <br>
+                        My configuration includes the <a href="https://www.rasppishop.de/Argon-ONE-V3-M2-NVME-PCIE-Gehaeuse"> Argon ONE V3 NVME Case</a> and a 256GB NVMe 
+                        SSD, which was repurposed from my laptop after an upgrade. This case offers a built-in an for thermal management and an NVMe SSD adapter. While the 
+                        adapter adds to the cost, an SSD is in all ways superior to a MicroSD, especially when you consider setting up something like a remote file system.
+                        <br>
+                        This thing with my power supply is pretty much the hardware setup. The rest is configuration on the Pi itself. Don't worry, pretty much all of the 
+                        services I installed have a GUI to them, making it super easy to configure things, without living in the terminal emulator.
+                        <br><br>
+                        <b>Initial Setup</b>
+                        <br>
+                        1. Install your operating system. I recommend booting from an SSD for better performance. You can set this up using a bootable USB or MicroSD card
+                        <br>
+                        2. My OS of choice is Linux Server, which operates entirely via the console (no desktop environment), but is not needed, just more lightweight
+                        <br>
+                        3. Configure SSH (Secure Shell) to enable remote access to your Raspberry Pi (you can look that up)
+                        <br><br>
+                        <b>Networking Basics</b>
+                        <br>
+                        Some things you need to know:
+                        <ul class="shifted-list">
+                            <li>Your router’s IP address (commonly 192.168.1.1) serves as a gateway to your network settings</li>
+                            <li>Tools like Fing (a mobile app) can scan your network and list connected devices. Alternatively, access your router’s GUI through a browser for similar information</li>
+                            <li>Some routers, like mine, even offer features such as WireGuard VPN, eliminating the need to set up VPN services on the Raspberry Pi</li>
+                        </ul>
+                        <br>
+                        What you basically need to know is the addressing scheme of your private network. Because all the other devices will have the same address space, 
+                        just a different number at the end to uniquely identify your devices. 
+                        <br><br>
+                        <b>What I installed</b>
+                        <br>
+                        <ul class="shifted-list">
+                            <li>Monitoring: RPI Monitor, Grafana + Prometheus</li>
+                            <li>Docker Management: Portainer</li>
+                            <li>File Sharing/Cloud: NextCloud</li>
+                            <li>Distributed Computing: folding@home</li>
+                            <li>News Aggregator: TTRSS (Tiny Tiny RSS)</li>
+                            <li>Dashboard: Homarr</li>
+                        </ul>
+                        <br>
+                        Most of the applications in this list are deployed as Docker containers, which is a super easy way to install applications but also to manage them. Management works
+                        either with Portainer, a GUI for your Docker containers, or simply by using the terminal. I end up using both, depending on what is just more comfortable for me at the moment.
+                        <br><br>
+                        <b>Installation Process</b>
+                        <br>
+                        In order to start installing things, it is always good practice to update your pi with:
+                        
+                        <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
+                        
+                        You can also just use the two commands one after another. The -y flag automatically says yes for you, since apt upgrade should always ask you whether you want to install the 
+                        upgrades or not. This should take some time but afterwards you're ready to go. 
+                        <br>
+                        When I started out, I firstly installed RPI Monitor. 
+                    </p>
+                    <!-- <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a> -->
+                </div>
+            </div>
+
+            <div class="project" id="project2">
+                <h2>Kubernetes (K8's) with Raspberry Pi?!</h2>
+                <p class="short-description">
+                    This project builds on the RPI5 home server project by adding some spicy hardware. A Raspberry Pi 4,  four, yes four Raspberry Pi Zero 2W. Everything fitted neatly into a cluster case. 
+                </p>
+                <div class="full-description">
+                    <p>
+                        First of all, what is Kubernetes and what are cluster and most importantly, why all of that?
+                        <br>
+                        In simple words, starting with clusters, clustering means that you basically have multiple PC's which work as one, while you have one master PC controlling those workers nodes.
+                        You are not going to combine multiple processors to achieve a giga processor, but rather you are able to split work evenly across your computation devices. Basically Docker, but with 
+                        PC's. 
+                        <br><br>
+                        What do you need for that you may ask? That's what Kubernetes is for, also called K8's. Kubernetes is a container orchestration tool, with which you can manage what I just described. Specifically
+                        for the RPI setup I am using K3's, which is K8's, but more lightweight, so our Pis can handle it. The installation of K3's itself is super simple. This time the most challenging thing
+                        was to set up my 5 Pis, the RPI4, and the four Zero 2 W's. 
+                        <br><br>
+                        <b>Hardware Setup</b>
+                        <br>
+                        My hardware consists of:
+                        <ul class="shifted-list">
+                            <li>1x RPI4 + Power Supply</li>
+                            <li>4x RPI Zero 2 W</li>
+                            <li>1x Clusterhat V2.5</li>
+                            <li>1x Clusterhat Case</li>
+                        </ul>
+                        <br>
+                        I probably spent more than I should have, but for someone like me, projects like these are just worth it. The most expensive part are going to be the Pis. The RPI4 is probably well known,
+                        the predecessor of the RPI5, which I'm using for my home server. The Zero 2 W is essentially the same, except with much less processing power. It runs an ARM 64-Bit processor @1GHz and has
+                        512MB, yes only 512MB. But it is an impressive piece of tech nonetheless, especially later in the entire cluster setup. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="project" id="project3">
+                <h2>Switching to Arch Linux + KDE Plasma/Hyprland</h2>
+                <p class="short-description">
+                    After having used Windows, MacOS, and Linux Mint, it's time for Arch Linux. Although quite an impulsive decision, it has probably been my best choice so far. I'll guide you 
+                    through the process from the perspective of a Linux beginner.
+                </p>
+                <div class="full-description">
+                    <p>
+                        To start things off, I did a manual install—no ArchInstaller. I had previously used dual boot with Windows 11 and Linux Mint but ended up completely wiping my SSD after 
+                        making a mistake. I started fresh from scratch. Your best friend when working with Arch Linux will be the <a href="https://wiki.archlinux.org/title/Main_page">Arch Wiki</a>. 
+                        It's super easy to follow and contains pretty much everything you'll need on your journey. 
+                        <br><br>
+                        When I installed Arch, I decided to dual-boot with Linux Mint. This was mostly because I was worried Arch would be too complicated for a beginner like me, or that I might 
+                        mess something up and lose all my data. <b>Always back up your data</b>. Fortunately, it wasn't as difficult as I thought, thanks to all the resources available online. 
+                        <br><br>
+                        <b>How did I start?</b>
+                        <br>
+                        I followed the installation wiki, but to summarize: First, I created a bootable USB with the Arch ISO and booted from it. Then, I created partitions for root and EFI (for UEFI boot), 
+                        formatted them accordingly, set up the network, and finally chrooted into the filesystem. After this, all I needed was a GUI. 
+                        <br>
+                        I started with SDDM and KDE Plasma, but later discovered Tiling with Hyprland, which is now my absolute favorite. The difference between a tiling window manager and a traditional 
+                        floating window system (like in Windows) is that, in a tiling manager, application windows are arranged as tiles. You can resize the tiles, but they cannot overlap. A lot of navigation 
+                        happens via keyboard shortcuts, which makes you feel like a true hackerman. 
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="project" id="project2">
-            <h2>Kubernetes (K8's) with Raspberry Pi?!</h2>
+        <!-- Motorsports -->
+    <div class="category">
+        <h2>Motorsports</h2>
+        <div class="project" id="motorsport1">
+            <h2>Sim Racing Setup</h2>
             <p class="short-description">
-                This project builds on the RPI5 home server project by adding some spicy hardware. A Raspberry Pi 4,  four, yes four Raspberry Pi Zero 2W. Everything fitted neatly into a cluster case. 
+                Building the ultimate racing simulator setup using the Logitech G923 and customizations.
             </p>
-            <div class="full-description">
-                <p>
-                    First of all, what is Kubernetes and what are cluster and most importantly, why all of that?
-                    <br>
-                    In simple words, starting with clusters, clustering means that you basically have multiple PC's which work as one, while you have one master PC controlling those workers nodes.
-                    You are not going to combine multiple processors to achieve a giga processor, but rather you are able to split work evenly across your computation devices. Basically Docker, but with 
-                    PC's. 
-                    <br>
-                    What do you need for that you may ask? That's what Kubernetes is for, also called K8's. Kubernetes is a container orchestration tool, with which you can manage what I just described. Specifically
-                    for the RPI setup I am using K3's, which is K8's, but more lightweight, so our Pis can handle it. The installation of K3's itself is super simple. This time the most challenging thing
-                    was to set up my 5 Pis, the RPI4, and the four Zero 2 W's. 
-                    <br><br>
-                    <b>Hardware Setup</b>
-                    <br>
-                    My hardware consists of:
-                    <ul class="shifted-list">
-                        <li>1x RPI4 + Power Supply</li>
-                        <li>4x RPI Zero 2 W</li>
-                        <li>1x Clusterhat V2.5</li>
-                        <li>1x Clusterhat Case</li>
-                    </ul>
-                    <br>
-                    I probably spent more than I should have, but for someone like me, projects like these are just worth it. The most expensive part are going to be the Pis. The RPI4 is probably well known,
-                    the predecessor of the RPI5, which I'm using for my home server. The Zero 2 W is essentially the same, except with much less processing power. It runs an ARM 64-Bit processor @1GHz and has
-                    512MB, yes only 512MB. But it is an impressive piece of tech nonetheless, especially later in the entire cluster setup. 
-                </p>
-            </div>
         </div>
+    </div>
 
-        <div class="project" id="project3">
-            <h2>Switching to Arch Linux + KDE Plasma/Hyprland</h2>
+    <!-- Music -->
+    <div class="category">
+        <h2>Music</h2>
+        <div class="project" id="music1">
+            <h2>Electric Guitar Projects</h2>
             <p class="short-description">
-                After having used Windows, MacOS, and Linux Mint, it's time for Arch Linux. Although quite an impulsive decision, it has probably been my best choice so far. I'll guide you 
-                through the process from the perspective of a Linux beginner.
+                Experimenting with tones, gear, and recording setups.
             </p>
-            <div class="full-description">
-                <p>
-                    To start things off, I did a manual install—no ArchInstaller. I had previously used dual boot with Windows 11 and Linux Mint but ended up completely wiping my SSD after 
-                    making a mistake. I started fresh from scratch. Your best friend when working with Arch Linux will be the <a href="https://wiki.archlinux.org/title/Main_page">Arch Wiki</a>. 
-                    It's super easy to follow and contains pretty much everything you'll need on your journey. 
-                    <br><br>
-                    When I installed Arch, I decided to dual-boot with Linux Mint. This was mostly because I was worried Arch would be too complicated for a beginner like me, or that I might 
-                    mess something up and lose all my data. <b>Always back up your data</b>. Fortunately, it wasn't as difficult as I thought, thanks to all the resources available online. 
-                    <br><br>
-                    <b>How did I start?</b>
-                    <br>
-                    I followed the installation wiki, but to summarize: First, I created a bootable USB with the Arch ISO and booted from it. Then, I created partitions for root and EFI (for UEFI boot), 
-                    formatted them accordingly, set up the network, and finally chrooted into the filesystem. After this, all I needed was a GUI. 
-                    <br>
-                    I started with SDDM and KDE Plasma, but later discovered Tiling with Hyprland, which is now my absolute favorite. The difference between a tiling window manager and a traditional 
-                    floating window system (like in Windows) is that, in a tiling manager, application windows are arranged as tiles. You can resize the tiles, but they cannot overlap. A lot of navigation 
-                    happens via keyboard shortcuts, which makes you feel like a true hackerman. 
-                </p>
-            </div>
         </div>
-        
+    </div>
 
         <!-- Add more projects as you go -->
     </section>
 
-    <script src="js/projects.js"></script>
+    <script src="js/projects_expandBox.js"></script>
+
 </body>
 </html>

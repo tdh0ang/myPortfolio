@@ -137,3 +137,12 @@ ul.shifted-list li {
     color: #d1d1d1;
     margin-bottom: 0.5rem;
 }
+
+pre {
+    background-color: #f4f4f4;  
+    border: 1px solid #ccc;     
+    padding: 10px;              
+    border-radius: 5px;         
+    font-family: 'Courier New', monospace;  
+    overflow: auto;             
+}

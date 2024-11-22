@@ -148,8 +148,8 @@ pre {
 }
 
 code {
-    font-family: 'Courier New', monospace;  /* Ensure code is monospaced */
-    color: #f8f8f2;                        /* Light text color */
+    font-family: 'Courier New', monospace;  
+    color: #f8f8f2;                        
 }
 
 .category {

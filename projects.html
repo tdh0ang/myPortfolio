@@ -19,14 +19,6 @@
         </nav>
     </header>
 
-    <div class="filter-buttons">
-        <button onclick="filterProjects('all')">All</button>
-        <button onclick="filterProjects('tech')">Tech & Coding</button>
-        <button onclick="filterProjects('motorsports')">Motorsports</button>
-        <button onclick="filterProjects('music')">Music</button>
-    </div>
-    
-
     <section class="projects">
         <h1>Welcome to my projects page!</h1>
 
@@ -56,10 +48,15 @@
                             <li>(Optional) Raspberry Pi 5 Case</li>
                         </ul>
                         <br>
+                        <div class="image-container">
+                            <img src="assets/images/rpi_server.png" alt="RPI Home Server">
+                            <p class="image-description">RPI5 with Argon Case</p>
+                        </div>
+                            <br>
                         My configuration includes the <a href="https://www.rasppishop.de/Argon-ONE-V3-M2-NVME-PCIE-Gehaeuse"> Argon ONE V3 NVME Case</a> and a 256GB NVMe 
                         SSD, which was repurposed from my laptop after an upgrade. This case offers a built-in an for thermal management and an NVMe SSD adapter. While the 
                         adapter adds to the cost, an SSD is in all ways superior to a MicroSD, especially when you consider setting up something like a remote file system.
-                        <br>
+                        <br><br>
                         This thing with my power supply is pretty much the hardware setup. The rest is configuration on the Pi itself. Don't worry, pretty much all of the 
                         services I installed have a GUI to them, making it super easy to configure things, without living in the terminal emulator.
                         <br><br>
@@ -221,7 +218,6 @@
     </section>
 
     <script src="js/projects_expandBox.js"></script>
-    <script src="js/projects_filter.js"></script>
 
 </body>
 </html>

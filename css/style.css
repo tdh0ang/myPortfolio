@@ -110,23 +110,6 @@ span {
     transform: scale(1.05);
 }
 
-/* Social Icons */
-.social-icons a {
-    display: inline-block;
-    color: #6626fc;
-    margin: 3rem 1.5rem 3rem 0;
-    font-size: 1.6rem;
-    transition: 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: white;
-    transform: scale(1.2);
-    background-color: #6626fc;
-    padding: 0.5rem;
-    border-radius: 5px;
-}
-
 /* Button */
 .btn {
     display: inline-block;

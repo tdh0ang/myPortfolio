@@ -98,16 +98,16 @@
                         <b>Installation Process</b>
                         <br>
                         In order to start installing things, it is always good practice to update your pi with:
-                        
+                        <br>
                         <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
-                        
+                        <br>
                         You can also just use the two commands one after another. The -y flag automatically says yes for you, since apt upgrade should always ask you whether you want to install the 
                         upgrades or not. This should take some time but afterwards you're ready to go. 
                         <br>
                         When I started out, I firstly installed RPI Monitor. A super simple tool, but its quite nice to see your RAM and CPU usage. After that I installed Docker with:
-                        
+                        <br>
                         <pre><code>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</code></pre>
-
+                        <br>
                         This command was taken from the Docker Website: https://docs.docker.com/engine/install/ubuntu/. Pretty much all things I host, I'll host via a Docker container deployment. Docker
                         is amazing because you can containerise anything. Thats why I am able to host so many useful things, by simply setting up the respective container and I'm good to go. This also makes 
                         it quite easy to deploy containers, because it doesn't really matter on which machine you're on. Windows or Linux, you can pull the Docker image for your desired application and you can 

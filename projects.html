@@ -78,15 +78,18 @@
                         What you basically need to know is the addressing scheme of your private network. Because all the other devices will have the same address space, 
                         just a different number at the end to uniquely identify your devices. 
                         <br><br>
-                        <b>What I installed</b>
+                        <b>What I installed (in no particular order)</b>
                         <br>
                         <ul class="shifted-list">
-                            <li>Monitoring: RPI Monitor, Grafana + Prometheus</li>
+                            <li>Monitoring: RPI Monitor, Grafana + Prometheus, Uptime Kuma</li>
                             <li>Docker Management: Portainer</li>
                             <li>File Sharing/Cloud: NextCloud</li>
                             <li>Distributed Computing: folding@home</li>
                             <li>News Aggregator: TTRSS (Tiny Tiny RSS)</li>
                             <li>Dashboard: Homarr</li>
+                            <li>Document Management: Paperless</li>
+                            <li>Media: Jellyfin</li>
+                            
                         </ul>
                         <br>
                         Most of the applications in this list are deployed as Docker containers, which is a super easy way to install applications but also to manage them. Management works
@@ -101,7 +104,17 @@
                         You can also just use the two commands one after another. The -y flag automatically says yes for you, since apt upgrade should always ask you whether you want to install the 
                         upgrades or not. This should take some time but afterwards you're ready to go. 
                         <br>
-                        When I started out, I firstly installed RPI Monitor. 
+                        When I started out, I firstly installed RPI Monitor. A super simple tool, but its quite nice to see your RAM and CPU usage. After that I installed Docker with:
+                        
+                        <pre><code>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</codec></pre>
+
+                        This command was taken from the Docker Website: https://docs.docker.com/engine/install/ubuntu/. Pretty much all things I host, I'll host via a Docker container deployment. Docker
+                        is amazing because you can containerise anything. Thats why I am able to host so many useful things, by simply setting up the respective container and I'm good to go. This also makes 
+                        it quite easy to deploy containers, because it doesn't really matter on which machine you're on. Windows or Linux, you can pull the Docker image for your desired application and you can 
+                        deploy it. 
+                        <br>
+                        At this point here I also have to mention the Docker Hub: https://hub.docker.com/. This is the marketplace for your container images. If you need something, you can just go there and
+                        make a quick search. Usually, images will link the GitHub for the source code with installation and configuration steps, sometimes you just need to do a quick google search. 
                     </p>
                     <!-- <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a> -->
                 </div>
